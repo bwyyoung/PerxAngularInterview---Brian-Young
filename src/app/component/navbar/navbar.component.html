@@ -1,0 +1,20 @@
+<mat-toolbar *ngIf="navsvc.visible" color="primary" class="toolbar-height">
+	<div>
+		<button mat-icon-button (click)="sidenav.toggle()">
+			<mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+		</button>
+	</div>
+</mat-toolbar>
+<mat-sidenav-container  class="full-height">
+	<mat-sidenav color="primary" #sidenav mode="over"  opened="false" >
+		<div>
+			<mat-nav-list>
+				<mat-list-item (click)="sidenav.toggle()" routerLink="/examplejson">Example json</mat-list-item>
+				<mat-list-item (click)="sidenav.toggle()" routerLink="/directive">Directives</mat-list-item>
+			</mat-nav-list>
+		</div>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>

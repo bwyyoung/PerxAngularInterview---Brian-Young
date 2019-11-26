@@ -10,7 +10,7 @@ describe('workspace-project App', () => {
 
   it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('PerxAngularInterview1 app is running!');
+    expect(page.getTitleText()).toEqual('perxangularinterview app is running!');
   });
 
   afterEach(async () => {

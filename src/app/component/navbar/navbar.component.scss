@@ -1,0 +1,15 @@
+$toolbar-height: 50px;
+
+.toolbar-height{
+  height: $toolbar-height;
+}
+
+@mixin calc($key, $value) {
+  #{$key}: -webkit-calc(#{$value});
+  #{$key}: -moz-calc(#{$value});
+  #{$key}: calc(#{$value});
+}
+
+.full-height {
+  @include calc("height", "100% - #{$toolbar-height}");
+}

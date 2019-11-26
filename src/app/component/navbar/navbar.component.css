@@ -1,0 +1,9 @@
+.toolbar-height {
+  height: 50px; }
+
+.full-height {
+  height: -webkit-calc(100% - 50px);
+  height: -moz-calc(100% - 50px);
+  height: calc(100% - 50px); }
+
+/*# sourceMappingURL=navbar.component.css.map */

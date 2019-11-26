@@ -1,0 +1,29 @@
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+.mat-table {
+  width: 100%;
+}
+
+.mat-cell {
+  word-break: break-all;
+  text-align: left;
+  padding-left: 0 !important;
+}
+
+.mat-column-id {
+  flex: 0 0 30px;
+  text-align: left;
+}
+
+.mat-column-type {
+  flex: 0 0 50px;
+}
+
+.mat-header-cell {
+  text-align: center;
+  border: 1px solid #CCC;
+  padding: 0 !important;
+}
