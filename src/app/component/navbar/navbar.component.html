@@ -1,12 +1,12 @@
-<mat-toolbar *ngIf="navsvc.visible" color="primary" class="toolbar-height">
+<mat-toolbar *ngIf="navsvc.visible" class="toolbar-height" color="primary">
 	<div>
-		<button mat-icon-button (click)="sidenav.toggle()">
+		<button (click)="sidenav.toggle()" mat-icon-button>
 			<mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
 		</button>
 	</div>
 </mat-toolbar>
-<mat-sidenav-container  class="full-height">
-	<mat-sidenav color="primary" #sidenav mode="over"  opened="false" >
+<mat-sidenav-container class="full-height">
+	<mat-sidenav #sidenav color="primary" mode="over" opened="false">
 		<div>
 			<mat-nav-list>
 				<mat-list-item (click)="sidenav.toggle()" routerLink="/examplejson">Example json</mat-list-item>

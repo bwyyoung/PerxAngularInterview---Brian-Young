@@ -7,8 +7,16 @@ import {LandingComponent} from './pages/landing/landing.component';
 import {ExamplejsonComponent} from './pages/examplejson/examplejson.component';
 import {DirectiveComponent} from './pages/directive/directive.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MatButtonModule, MatInputModule, MatSelectModule, MatSortModule,
-    MatListModule, MatTableModule, MatIconModule, MatSidenavModule} from '@angular/material';
+import {
+    MatButtonModule,
+    MatIconModule,
+    MatInputModule,
+    MatListModule,
+    MatSelectModule,
+    MatSidenavModule,
+    MatSortModule,
+    MatTableModule
+} from '@angular/material';
 import {NavbarComponent} from './component/navbar/navbar.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {HttpClientModule} from '@angular/common/http';
